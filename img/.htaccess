@@ -1,0 +1,13 @@
+# if it's a real path, just serve it
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /lite/img/
+	RewriteCond  %{REQUEST_FILENAME}  !-f
+	RewriteCond  %{REQUEST_FILENAME}  !-d
+	RewriteRule ^preview/(.*)$ preview.php?file=$1 [QSA,NC,L]
+</IfModule>
+
+#<FilesMatch "\.php$">
+#    Order Allow,Deny
+#    Deny from all
+#</FilesMatch>
