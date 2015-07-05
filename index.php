@@ -346,6 +346,7 @@
 									<span class="card-title grey-text text-darken-4">นิตยสาร <i class="icon icon-Cyberant" aria-hidden="true" title="Cyberant"></i> <i class="material-icons right">titleclose</i></span>
 									<p>นิยสารภาษาอังกฤษประจำภาควิชาวิศวกรรมคอมพิวเตอร์ นำเสนอเรื่องราวทั้งในภาควิชาและสาระตามแนวคิดของแต่ละเล่ม แจกจ่ายให้แก่นักศึกษาและผู้สนใจโดยได้รับการสนับสนุนงบประมาณจากภาควิชาฯ เต็มจำนวน</p>
 									<p>ผมได้ทำงานในฐานะผู้เขียนบทความสัมภาษณ์ และทำรูปเล่มนิตยสารในฉบับที่ 9 และ 10 ซึ่งจัดทำในปีการศึกษา 2557</p>
+									<p>นิตยสารนี้จัดทำร่วมกับนักศึกษาชั้นปีที่ 1 ภาควิชาวิศวกรรมคอมพิวเตอร์ โดยได้รับการสนับสนุนจากฝ่ายวิเทศสัมพันธ์ภาควิชาฯ </p>
 								</div>
 							</div>
 						</div>
@@ -364,8 +365,16 @@
 									<p>
 										ในงานนี้ผมได้ทำงานใน 2 ส่วน ได้แก่
 										<ol>
-											<li><strong>งาน Website</strong> ผมทำหน้าที่ดูแลการจัดการหน้าหลัก/javascript รวมถึงงาน backend JSON API สำหรับติดต่อกับ frontend ในหน้ารับสมัครโดยพัฒนาด้วย Codeigniter บนภาษา PHP</li>
-											<li><strong>งานหนังสือเรียน</strong> ผมทำหน้าที่จัดรูปเล่มและวาง Layout หนังสือ</li>
+											<li>
+												<p>
+													<strong>งาน Website</strong> ผมทำหน้าที่ดูแลการจัดการหน้าหลัก/javascript รวมถึงงาน backend JSON API สำหรับติดต่อกับ frontend ในหน้ารับสมัครโดยพัฒนาด้วย Codeigniter บนภาษา PHP<br/>
+													เว็บไซต์นี้พัฒนาร่วมกับ<a href="http://winwamon.in.th">นายวรัฒม์ กวีพรพจน์</a> ได้รับความช่วยเหลือในการดำเนินการและให้คำปรึกษาจากนายธนิก สิทธิโชคสกุลไชย
+												</p>
+												</li>
+											<li><p>
+												<strong>งานหนังสือเรียน</strong> ผมทำหน้าที่จัดรูปเล่มและวาง Layout หนังสือ <br />
+												หนังสือนี้จัดทำโดยฝ่ายวิชาการของโครงการ ด้วยความช่วยเหลืออย่างดียิ่งจากนางสาวญานิศา เหมประชิตชัย ประธานโครงการฯ และนายณัฐชนน นินยวี ประธานฝ่ายวิาการโครงการฯ
+											</p></li>
 										</ol>
 									</p>
 								</div>
@@ -384,6 +393,12 @@
 									<span class="card-title grey-text text-darken-4">เว็บไซต์ pccnst.ac.th <i class="material-icons right">titleclose</i></span>
 									<p>เว็บไซต์โรงเรียนจุฬาภรณราชาวิทยาลัย นครศรีธรรมราช</p>
 									<p>ในระหว่างปีการศึกษา 2557 ผมได้ทำหน้าที่ติดตั้ง บริหารจัดการเว็บไซต์โดยใช้ Wordpress และสร้าง Theme จาก mockup ของนายบัณฑิต บุญฤทธิ์ รวมทั้งการโปรแกรมพิเศษเพิ่มเติมสำหรับแสดงผลบนเว็บไซต์ อาทิเช่นรายงานผลการแข่งขัน การรับสมัครเข้าศึกษาต่อ เป็นต้น</p>
+									<h4>ผู้ร่วมพัฒนา</h4>
+									<p>
+										<strong>ที่ปรึกษา</strong> นายฐปนวัฒน์ ชูกลิ่น, นางพรพิมล ชุมแสง, นายวิชิต วงศ์ทอง
+										<strong>ศิลปกรรม</strong> นายบัณฑิต บุญฤทธิ์
+										<strong>ผู้ช่วย</strong> นายศราวุธ คำเศษ
+									</p>
 									<div class="row">
 										<div class="col m4 s6">
 											<img class="materialboxed" width="100%" src="./img/preview/pccnst/pccnst-1.png" data-full="./img/full/pccnst/pccnst-1.png">
@@ -545,6 +560,13 @@
 	<script>
 		$(document).ready(function(){
 			$(".animsition").animsition({ inClass: 'zoom-in' });
+			$(".nav-wrapper li a").click(function(e){
+				var target = $($(this).attr('href')), activeLi;
+				if(target.length){
+					target.velocity('scroll');
+					e.preventDefault();
+				}
+			});
 		});
 	</script>
 
