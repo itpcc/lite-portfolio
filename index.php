@@ -1,6 +1,6 @@
 <?php
 	if(strpos($_SERVER['HTTP_HOST'], 'portfolio')===false){
-		header('Location http://portfolio.itpcc.net/lite/');
+		header('Location: http://portfolio.itpcc.net/lite/');
 		exit;
 	}
 ?><!DOCTYPE html>
@@ -9,10 +9,36 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 	<title>Portfolio (One-page version) | ITPCC</title>
+	<meta name="description" content="สรุปผลงานและการแข่งขันของนายราชศักดิ์ รักษ์กำเนิด" />
+	<meta name="keywords" content="ITPCC,portfolio" />
+	<meta name="robots" content="index, follow" />
+
+	<meta itemprop="name" content="Portfolio (One-page version) | ITPCC">
+	<meta itemprop="description" content="สรุปผลงานและการแข่งขันของนายราชศักดิ์ รักษ์กำเนิด">
+	<meta itemprop="image" content="http://portfolio.itpcc.net/lite/img/opengraph.png">
+
+	<!-- Twitter Card data -->
+	<meta name="twitter:card" content="http://portfolio.itpcc.net/lite/img/opengraph.png">
+	<meta name="twitter:site" content="http://portfolio.itpcc.net/lite">
+	<meta name="twitter:title" content="Portfolio (One-page version) | ITPCC">
+	<meta name="twitter:description" content="Page สรุปผลงานและการแข่งขันของนายราชศักดิ์ รักษ์กำเนิด">
+	<meta name="twitter:creator" content="@itpcc">
+	<meta name="twitter:image:src" content="http://www.example.com/image.html">
+
+	<!-- Open Graph data -->
+	<meta property="og:title" content="Portfolio (One-page version) | ITPCC" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://portfolio.itpcc.net/lite/" />
+	<meta property="og:image" content="http://portfolio.itpcc.net/lite/img/opengraph.png" />
+	<meta property="og:description" content="สรุปผลงานและการแข่งขันของนายราชศักดิ์ รักษ์กำเนิด" />
+	<meta property="og:site_name" content="ITPCC" />
+	<meta property="article:section" content="Portfolio" />
+	<meta property="article:tag" content="ITPCC,portfolio" />
+	<meta property="fb:admins" content="1023475545" />
 
 	<!-- CSS  -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link href="./assets/css/cs-prakas.css" type="text/css" rel="stylesheet"/>
+	<link href="./assets/css/boon.css" type="text/css" rel="stylesheet"/>
 	<link href="./assets/css/bangna.css" type="text/css" rel="stylesheet"/>
 	<link href="./assets/css/font-itpcc.css" type="text/css" rel="stylesheet"/>
 	<link href="./assets/css/animsition.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -21,7 +47,7 @@
 	<link href="./assets/css/slick.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="./assets/css/slick-theme.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 	<link href="./assets/css/magic.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-	<link href="./assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+	<link href="./assets/css/style.css?ver=1.25" type="text/css" rel="stylesheet" media="screen,projection"/>
 
 	<script src="./assets/js/modernizr.custom.24621.js"></script>
 </head>
@@ -36,7 +62,7 @@
 					<li><a href="#computer-archivement" data-langname="computer-archivement">ผลงานคอมพิวเตอร์</a></li>
 					<li><a href="#other-archivement" data-langname="other-archivement">ผลงานอื่น</a></li>
 					<li><a href="#project" data-langname="project">โครงงาน</a></li>
-					<li><a href="#แนืะฟแะ" data-langname="contact">ติดต่อ</a></li>
+					<li><a href="#contact" data-langname="contact">ติดต่อ</a></li>
 				</ul>
 
 				<ul id="nav-mobile" class="side-nav">
@@ -45,9 +71,9 @@
 					<li><a href="#computer-archivement" data-langname="computer-archivement"><span class="material-icons">dvr</span> ผลงานคอมพิวเตอร์</a></li>
 					<li><a href="#other-archivement" data-langname="other-archivement"><span class="icon icon-book"></span> ผลงานอื่น</a></li>
 					<li><a href="#project" data-langname="project"><span class="icon icon-books"></span> โครงงาน</a></li>
-					<li><a href="#แนืะฟแะ" data-langname="contact"><span class="material-icons">contacts</span> ติดต่อ</a></li>
+					<li><a href="#contact" data-langname="contact"><span class="material-icons">contacts</span> ติดต่อ</a></li>
 				</ul>
-				<a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+				<a href="#" data-activates="nav-mobile" class="button-collapse blue-text"><i class="mdi-navigation-menu"></i></a>
 			</div>
 		</nav>
 
@@ -56,7 +82,7 @@
 				<div class="container">
 					<div class="row left">
 						<div class="col m9 section-content-wrapper">
-							<h1 class="header left teal-text text-darken-2">Hi, I'm Rachasak</h1>					
+							<h1 class="header left blue-text text-darken-2">Hi, I'm Rachasak</h1>					
 							<h5 class="header light black-text">
 								ผมเชื่อว่าประสบการณ์ที่ดีที่สุดไม่ได้เกิดจากการทำไปตามคำสั่ง แต่เกิดจากการทำในสิ่งที่ชอบและอยากทำ<br />
 								นี่คือสรุปข้อมูลผลงานและรายละเอียดทั่วไปของผมตลอดแปดปีที่ผ่านมา ขอเชิญท่านเลื่อนลงด้านล่างหรือคลิกเลือกตามเมนูแล้วทัศนาได้เลยครับ<br />
@@ -75,12 +101,12 @@
 		<div id="about-me" class="z-depth-1">
 			<div class="section">
 				<div class="row">
-					<h2 class="header center teal-text text-darken-2">ข้อมูลเบื้องต้น</h2>
+					<h2 class="header center blue-text text-darken-2">ข้อมูลเบื้องต้น</h2>
 				</div>
 				<div class="row">
 					<div class="col m4 attr-title"><i class="Small mdi-social-school"></i> ผมเป็นใคร?</div>
 					<div class="col m8 attr-detail">
-						ผมเป็น<span title="นักล่าปริญญา ใฝ่ฝันขึ้นไปเป็นใหญ่">นักศึกษา</span>ชั้นปีที่ 1 ภาควิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+						ผมเป็น<span title="นักล่าปริญญา ใฝ่ฝันขึ้นไปเป็นใหญ่">นักศึกษา</span>ชั้นปีที่ 1 <i class="icon icon-cpe"></i> ภาควิชาวิศวกรรมคอมพิวเตอร์ <i class="icon icon-KMUTT"></i> มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
 					</div>
 				</div>
 				<div class="row">
@@ -92,17 +118,16 @@
 				<div class="row">
 					<div class="col m4 attr-title"><i class="Small mdi-social-school"></i> ผมเรียนอะไรอยู่</div>
 					<div class="col m8 attr-detail">
-						วิศวกรรมคอมพิวเตอร์ (CPE#28) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (KMUTT) ปีการศึกษา 2557<br />ก่อนหน้านี้เคยเรียนที่โรงเรียนจุฬาภรณราชวิทยาลัย นครศรีธรรมราช (PCCNST'15 &amp; '18)
+						<i class="icon icon-cpe"></i> วิศวกรรมคอมพิวเตอร์ (CPE#28) <i class="icon icon-KMUTT"></i> มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี (KMUTT) ปีการศึกษา 2557<br />ก่อนหน้านี้เคยเรียนที่โรงเรียนจุฬาภรณราชวิทยาลัย นครศรีธรรมราช (PCCNST'15 &amp; '18)
 					</div>
 				</div>
 				<div class="row">
 					<div class="col m4 attr-title"><i class="Small mdi-av-my-library-books"></i> ผมชำนาญอะไรบ้าง</div>
-					<div class="col m8 attr-detail">
-
+					<div class="col m8 attr-detail"><!-- 
 						<ul>
-							<li><strong>Excellent: </strong> PHP (Both procedural and OOP [Codeigniter, Lavarel]), HTML(5), CSS(3), Javascript (especially with jQuery)</li>
+							<li><strong>Excellent: </strong>  -->PHP (Both procedural and OOP [Codeigniter, Lavarel]), HTML(5), CSS(3), Javascript (especially with jQuery)<!-- </li>
 							<li><strong>Average: </strong> C, C++,Node.js, Java</li>
-						</ul>
+						</ul> -->
 					
 					</div>
 				</div>	
@@ -119,7 +144,7 @@
 							</div>
 						</div>
 						<div class="col l8 m6 section-content-wrapper">
-							<h1 class="header left teal-text text-darken-2">การแข่งขันด้านคอมพิวเตอร์</h1>					
+							<h1 class="header left blue-text text-darken-2">การแข่งขันด้านคอมพิวเตอร์</h1>					
 							<h5 class="header light black-text">
 								ผมชื่นชอบการแข่งขัน เพราะมันทำให้ผมเห็นว่ายังมีคนอื่นมากมายที่เก่งกว่าผม ที่สำคัญที่สุดคือทำให้ผมได้เปิดหูเปิดตาและมีแรงบันดาลใจในการพัฒนาตนเอง<br />
 								นี่คือรายการกิจกรรมสำคัญที่ผมได้เข้าแข่งขันในด้านคอมพิวเตอร์
@@ -229,7 +254,7 @@
 				<div class="align-left">
 					<div class="row left">
 						<div class="col l8 m6 section-content-wrapper">
-							<h1 class="header left teal-text text-darken-2">การแข่งขันอื่นๆ</h1>					
+							<h1 class="header left blue-text text-darken-2">การแข่งขันอื่นๆ</h1>					
 							<h5 class="header light black-text">
 								นอกจากคอมพิวเตอร์ ผมยังมีประสบการณ์แข่งขันสอบด้านวิชาการอื่นๆ ด้วย <del>และนี่คือสิ่งที่ชายคนนี้ทำ</del>
 							</h5>
@@ -306,124 +331,127 @@
 					</div>
 				</div>
 
-				<div id="project-list" class="row">
-					<div class="col s12 m4" data-project="cyberant">
-						<div class="card">
-							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="./img/project-lab/ca.png">
-							</div>
-							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-4">นิตยสาร <i class="icon icon-Cyberant" aria-hidden="true" title="Cyberant"></i> <i class="material-icons right">more_vert</i></span>
-								<p><a href="http://cpe.kmutt.ac.th/cyberant/"><i class="material-icons" style="vertical-align: middle;">web</i></a> | <a href="./docs/ca9.pdf">#9</a> | <a href="./docs/ca10-1.pdf">#10</a></p>
-							</div>
-							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">นิตยสาร <i class="icon icon-Cyberant" aria-hidden="true" title="Cyberant"></i> <i class="material-icons right">titleclose</i></span>
-								<p>นิยสารภาษาอังกฤษประจำภาควิชาวิศวกรรมคอมพิวเตอร์ นำเสนอเรื่องราวทั้งในภาควิชาและสาระตามแนวคิดของแต่ละเล่ม แจกจ่ายให้แก่นักศึกษาและผู้สนใจโดยได้รับการสนับสนุนงบประมาณจากภาควิชาฯ เต็มจำนวน</p>
-								<p>ผมได้ทำงานในฐานะผู้เขียนบทความสัมภาษณ์ และทำรูปเล่มนิตยสารในฉบับที่ 9 และ 10 ซึ่งจัดทำในปีการศึกษา 2557</p>
-							</div>
-						</div>
-					</div>
-					<div class="col s12 m4" data-project="comcamp">
-						<div class="card">
-							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="./img/project-lab/cc.png">
-							</div>
-							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-4">ค่าย <i class="icon icon-Comcamp-Full-Logo" aria-hidden="true" title="Comcamp#27"></i> <i class="material-icons right">more_vert</i></span>
-								<p><a href="http://27.comcamp.in.th/"><i class="material-icons" style="vertical-align: middle;">web</i></a> | <a href="https://github.com/itpcc/Comcamp27"><i class="icon icon-github2" aria-hidden="true" title="Source code"></i></a> | <a href="./docs/cc.pdf"><i class="icon icon-file-pdf" aria-hidden="true" title="Book"></i></a></p>
-							</div>
-							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">ค่าย <i class="icon icon-Comcamp-Full-Logo" aria-hidden="true" title="Comcamp#27"></i> <i class="material-icons right">titleclose</i></span>
-								<p>ค่ายฝึกอบรมเชิงปฏิบัติการคอมพิวเตอร์เบื้องต้นครั้งที่ 27 ภาควิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
-								<p>
-									ในงานนี้ผมได้ทำงานใน 2 ส่วน ได้แก่
-									<ol>
-										<li><strong>งาน Website</strong> ผมทำหน้าที่ดูแลการจัดการหน้าหลัก/javascript รวมถึงงาน backend JSON API สำหรับติดต่อกับ frontend ในหน้ารับสมัครโดยพัฒนาด้วย Codeigniter บนภาษา PHP</li>
-										<li><strong>งานหนังสือเรียน</strong> ผมทำหน้าที่จัดรูปเล่มและวาง Layout หนังสือ</li>
-									</ol>
-								</p>
+				<div id="project-list">
+					<div class="row">
+						<div class="col s12 m4" data-project="cyberant">
+							<div class="card">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="./img/project-lab/ca.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">นิตยสาร <i class="icon icon-Cyberant" aria-hidden="true" title="Cyberant"></i> <i class="material-icons right">more_vert</i></span>
+									<p><a href="http://cpe.kmutt.ac.th/cyberant/"><i class="material-icons" style="vertical-align: middle;">web</i></a> | <a href="./docs/ca9.pdf">#9</a> | <a href="./docs/ca10-1.pdf">#10</a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">นิตยสาร <i class="icon icon-Cyberant" aria-hidden="true" title="Cyberant"></i> <i class="material-icons right">titleclose</i></span>
+									<p>นิยสารภาษาอังกฤษประจำภาควิชาวิศวกรรมคอมพิวเตอร์ นำเสนอเรื่องราวทั้งในภาควิชาและสาระตามแนวคิดของแต่ละเล่ม แจกจ่ายให้แก่นักศึกษาและผู้สนใจโดยได้รับการสนับสนุนงบประมาณจากภาควิชาฯ เต็มจำนวน</p>
+									<p>ผมได้ทำงานในฐานะผู้เขียนบทความสัมภาษณ์ และทำรูปเล่มนิตยสารในฉบับที่ 9 และ 10 ซึ่งจัดทำในปีการศึกษา 2557</p>
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col s12 m4" data-project="pccnst-web">
-						<div class="card">
-							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="./img/project-lab/pccnst-web.png">
+						<div class="col s12 m4" data-project="comcamp">
+							<div class="card">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="./img/project-lab/cc.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">ค่าย <i class="icon icon-Comcamp-Full-Logo" aria-hidden="true" title="Comcamp#27"></i> <i class="material-icons right">more_vert</i></span>
+									<p><a href="http://27.comcamp.in.th/"><i class="material-icons" style="vertical-align: middle;">web</i></a> | <a href="https://github.com/itpcc/Comcamp27"><i class="icon icon-github2" aria-hidden="true" title="Source code"></i></a> | <a href="./docs/cc.pdf"><i class="icon icon-file-pdf" aria-hidden="true" title="Book"></i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">ค่าย <i class="icon icon-Comcamp-Full-Logo" aria-hidden="true" title="Comcamp#27"></i> <i class="material-icons right">titleclose</i></span>
+									<p>ค่ายฝึกอบรมเชิงปฏิบัติการคอมพิวเตอร์เบื้องต้นครั้งที่ 27 ภาควิชาวิศวกรรมคอมพิวเตอร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี</p>
+									<p>
+										ในงานนี้ผมได้ทำงานใน 2 ส่วน ได้แก่
+										<ol>
+											<li><strong>งาน Website</strong> ผมทำหน้าที่ดูแลการจัดการหน้าหลัก/javascript รวมถึงงาน backend JSON API สำหรับติดต่อกับ frontend ในหน้ารับสมัครโดยพัฒนาด้วย Codeigniter บนภาษา PHP</li>
+											<li><strong>งานหนังสือเรียน</strong> ผมทำหน้าที่จัดรูปเล่มและวาง Layout หนังสือ</li>
+										</ol>
+									</p>
+								</div>
 							</div>
-							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-4">เว็บไซต์  <i class="material-icons right">more_vert</i> pccnst.ac.th</span>
-								<p></p>
-							</div>
-							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">เว็บไซต์ pccnst.ac.th <i class="material-icons right">titleclose</i></span>
-								<p>เว็บไซต์โรงเรียนจุฬาภรณราชาวิทยาลัย นครศรีธรรมราช</p>
-								<p>ในระหว่างปีการศึกษา 2557 ผมได้ทำหน้าที่ติดตั้ง บริหารจัดการเว็บไซต์โดยใช้ Wordpress และสร้าง Theme จาก mockup ของนายบัณฑิต บุญฤทธิ์ รวมทั้งการโปรแกรมพิเศษเพิ่มเติมสำหรับแสดงผลบนเว็บไซต์ อาทิเช่นรายงานผลการแข่งขัน การรับสมัครเข้าศึกษาต่อ เป็นต้น</p>
-								<div class="row">
-									<div class="col m4 s6">
-										<img class="materialboxed" width="100%" src="./img/preview/pccnst/pccnst-1.png" data-full="./img/full/pccnst/pccnst-1.png">
-									</div>
-									<div class="col m4 s6">
-										<img class="materialboxed" width="100%" src="./img/preview/pccnst/pccnst-2.png" data-full="./img/full/pccnst/pccnst-2.png">
-									</div>
-									<div class="col m4 s6">
-										<img class="materialboxed" width="100%" src="./img/preview/pccnst/pccnst-3.png" data-full="./img/full/pccnst/pccnst-3.png">
-									</div>
-									<div class="col m4 s6">
-										<img class="materialboxed" width="100%" src="./img/preview/pccnst/pccnst-4.png" data-full="./img/full/pccnst/pccnst-4.png">
-									</div>
-									<div class="col m4 s6">
-										<img class="materialboxed" width="100%" src="./img/preview/pccnst/pccnst-5.png" data-full="./img/full/pccnst/pccnst-5.png">
+						</div>
+						<div class="col s12 m4" data-project="pccnst-web">
+							<div class="card">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="./img/project-lab/pccnst-web.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">เว็บไซต์  <i class="material-icons right">more_vert</i> pccnst.ac.th</span>
+									<p>&nbsp;</p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">เว็บไซต์ pccnst.ac.th <i class="material-icons right">titleclose</i></span>
+									<p>เว็บไซต์โรงเรียนจุฬาภรณราชาวิทยาลัย นครศรีธรรมราช</p>
+									<p>ในระหว่างปีการศึกษา 2557 ผมได้ทำหน้าที่ติดตั้ง บริหารจัดการเว็บไซต์โดยใช้ Wordpress และสร้าง Theme จาก mockup ของนายบัณฑิต บุญฤทธิ์ รวมทั้งการโปรแกรมพิเศษเพิ่มเติมสำหรับแสดงผลบนเว็บไซต์ อาทิเช่นรายงานผลการแข่งขัน การรับสมัครเข้าศึกษาต่อ เป็นต้น</p>
+									<div class="row">
+										<div class="col m4 s6">
+											<img class="materialboxed" width="100%" src="./img/preview/pccnst/pccnst-1.png" data-full="./img/full/pccnst/pccnst-1.png">
+										</div>
+										<div class="col m4 s6">
+											<img class="materialboxed" width="100%" src="./img/preview/pccnst/pccnst-2.png" data-full="./img/full/pccnst/pccnst-2.png">
+										</div>
+										<div class="col m4 s6">
+											<img class="materialboxed" width="100%" src="./img/preview/pccnst/pccnst-3.png" data-full="./img/full/pccnst/pccnst-3.png">
+										</div>
+										<div class="col m4 s6">
+											<img class="materialboxed" width="100%" src="./img/preview/pccnst/pccnst-4.png" data-full="./img/full/pccnst/pccnst-4.png">
+										</div>
+										<div class="col m4 s6">
+											<img class="materialboxed" width="100%" src="./img/preview/pccnst/pccnst-5.png" data-full="./img/full/pccnst/pccnst-5.png">
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col s12 m4" data-project="pccnst-cover">
-						<div class="card">
-							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="./img/project-lab/pccnst-cover.jpg">
-							</div>
-							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-4">PCCNST News cover<i class="material-icons right">more_vert</i> generator  </span>
-								<p><a href="http://itpcc.net/project/cover_gen/"><i class="material-icons" style="vertical-align: middle;">web</i></a> | <a href="https://github.com/itpcc/PCCNST-news-cover-generator"><i class="icon icon-github2" aria-hidden="true" title="Source code"></i></a></p>
-							</div>
-							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">PCCNST News cover <i class="material-icons right">titleclose</i> generator</span>
-								<p>ระบบสร้างรูปปกบทความด้วย HTML5 Canvas เป็นโครงงานเล็กๆ ที่ผมใช้เวลาว่างๆ (และเซ็งเพราะโดนบอทตีตายตลอด) ลองเล่นกับ Canvas เพื่อสร้างรูปภาพปกบทความจาก footage ในเว็บ<a href="https://www.facebook.com/photo.php?fbid=10204327683805232&set=pb.1023475545.-2207520000.1435684720.&type=3&theater">และสามารถวางรูปโลโก้เพิ่มเติมได้</a>ตามวาระ </p>
-								<p>เนื่องจากเป็นโครงงานเล็กยามว่างของผม จึงได้ทำทั้งหมดตั้งแต่หน้า UI และ logic โดยใช้ jQuery, jQueryUI และ Bootstrap เป็นฐานในการพัฒนาหลัก</p>
-							</div>
-						</div>
-					</div>
-					<div class="col s12 m4" data-project="pccnst-around-thai">
-						<div class="card">
-							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="./img/project-lab/pcc-around-thai.png">
-							</div>
-							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-4">PCC <i class="material-icons right">more_vert</i> around Thailand  </span>
-								<p><a href="https://github.com/itpcc/pcc-around-thai"><i class="icon icon-github2" aria-hidden="true" title="Source code"></i></a></p>
-							</div>
-							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">PCC <i class="material-icons right">titleclose</i> around Thailand</span>
-								<p>อีกหนึ่งในโครงงานเล็กที่ทำขึ้นเพื่อใช้ในเว็บไซต์โรงเรียนฯ เป็นระบบดึงข้อมูลข่าวสารที่เผยแพร่บนเว็บไซต์โรงเรียนจุฬาภรณราชวิทยาลัยอื่นๆ ทั้ง 11 แห่ง โดยการถอดรหัส HTML โดยตรง (เกือบทั้งหมดไม่มีบริการ RSS Feed) แล้วส่งข้อมูลผ่าน JSON API</p>
-								<p>โครงงานเล็กนี้ผมพัฒนาหน้าบ้านด้วย Bootstrap และ jQuery หลังบ้านด้วยภาษา PHP แบบ Procedure</p>
+					<div class="row">
+						<div class="col s12 m4" data-project="pccnst-cover">
+							<div class="card">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="./img/project-lab/pccnst-cover.jpg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">PCCNST News cover<i class="material-icons right">more_vert</i> generator  </span>
+									<p><a href="http://itpcc.net/project/cover_gen/"><i class="material-icons" style="vertical-align: middle;">web</i></a> | <a href="https://github.com/itpcc/PCCNST-news-cover-generator"><i class="icon icon-github2" aria-hidden="true" title="Source code"></i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">PCCNST News cover <i class="material-icons right">titleclose</i> generator</span>
+									<p>ระบบสร้างรูปปกบทความด้วย HTML5 Canvas เป็นโครงงานเล็กๆ ที่ผมใช้เวลาว่างๆ (และเซ็งเพราะโดนบอทตีตายตลอด) ลองเล่นกับ Canvas เพื่อสร้างรูปภาพปกบทความจาก footage ในเว็บ<a href="https://www.facebook.com/photo.php?fbid=10204327683805232&set=pb.1023475545.-2207520000.1435684720.&type=3&theater">และสามารถวางรูปโลโก้เพิ่มเติมได้</a>ตามวาระ </p>
+									<p>เนื่องจากเป็นโครงงานเล็กยามว่างของผม จึงได้ทำทั้งหมดตั้งแต่หน้า UI และ logic โดยใช้ jQuery, jQueryUI และ Bootstrap เป็นฐานในการพัฒนาหลัก</p>
+								</div>
 							</div>
 						</div>
-					</div>
-
-					<div class="col s12 m4" data-project="pccnst-around-thai">
-						<div class="card">
-							<div class="card-image waves-effect waves-block waves-light">
-								<img class="activator" src="./img/project-lab/pcc-map.png">
+						<div class="col s12 m4" data-project="pccnst-around-thai">
+							<div class="card">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="./img/project-lab/pcc-around-thai.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">PCC <i class="material-icons right">more_vert</i> around Thailand  </span>
+									<p><a href="https://github.com/itpcc/pcc-around-thai"><i class="icon icon-github2" aria-hidden="true" title="Source code"></i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">PCC <i class="material-icons right">titleclose</i> around Thailand</span>
+									<p>อีกหนึ่งในโครงงานเล็กที่ทำขึ้นเพื่อใช้ในเว็บไซต์โรงเรียนฯ เป็นระบบดึงข้อมูลข่าวสารที่เผยแพร่บนเว็บไซต์โรงเรียนจุฬาภรณราชวิทยาลัยอื่นๆ ทั้ง 11 แห่ง โดยการถอดรหัส HTML โดยตรง (เกือบทั้งหมดไม่มีบริการ RSS Feed) แล้วส่งข้อมูลผ่าน JSON API</p>
+									<p>โครงงานเล็กนี้ผมพัฒนาหน้าบ้านด้วย Bootstrap และ jQuery หลังบ้านด้วยภาษา PHP แบบ Procedure</p>
+								</div>
 							</div>
-							<div class="card-content">
-								<span class="card-title activator grey-text text-darken-4">PCC <i class="material-icons right">more_vert</i> map  </span>
-								<p><a href="http://demo.itpcc.net/pcc-map/"><i class="material-icons" style="vertical-align: middle;">web</i></a> | <a href="https://github.com/itpcc/pcc-map"><i class="icon icon-github2" aria-hidden="true" title="Source code"></i></a></p>
-							</div>
-							<div class="card-reveal">
-								<span class="card-title grey-text text-darken-4">PCC <i class="material-icons right">titleclose</i> map</span>
-								<p>หนึ่งในโครงงานเล็กที่ทำขึ้นเพื่อใช้ในเว็บไซต์โรงเรียนฯ เป็นระบบแสดงตำแหน่งของเครือข่ายโรงเรียนจุฬาภรณราชวิทยาลัยทั้ง 12 แห่งโดยใช้ Google Map API และแสดงข้อมูลพื้นฐานของโรงเรียนแต่ละแห่งได้ทั้งการคลิกที่รายชื่อหรือ icon บนแผนที่</p>
-								<p>โครงงานเล็กนี้ผมพัฒนาด้วย jQuery และ gmap.js ตัวช่วยติดต่อกับ Google Map API</p>
+						</div>
+						<div class="col s12 m4" data-project="pccnst-around-thai">
+							<div class="card">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="./img/project-lab/pcc-map.png">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">PCC <i class="material-icons right">more_vert</i> map  </span>
+									<p><a href="http://demo.itpcc.net/pcc-map/"><i class="material-icons" style="vertical-align: middle;">web</i></a> | <a href="https://github.com/itpcc/pcc-map"><i class="icon icon-github2" aria-hidden="true" title="Source code"></i></a></p>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">PCC <i class="material-icons right">titleclose</i> map</span>
+									<p>หนึ่งในโครงงานเล็กที่ทำขึ้นเพื่อใช้ในเว็บไซต์โรงเรียนฯ เป็นระบบแสดงตำแหน่งของเครือข่ายโรงเรียนจุฬาภรณราชวิทยาลัยทั้ง 12 แห่งโดยใช้ Google Map API และแสดงข้อมูลพื้นฐานของโรงเรียนแต่ละแห่งได้ทั้งการคลิกที่รายชื่อหรือ icon บนแผนที่</p>
+									<p>โครงงานเล็กนี้ผมพัฒนาด้วย jQuery และ gmap.js ตัวช่วยติดต่อกับ Google Map API</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -491,7 +519,9 @@
 			<div class="container">
 				<div class="row">
 					<p class="white-text">
-						Made by <a class="blue-text text-lighten-3" href="http://materializecss.com/templates/parallax-template/preview.html">Parallax Template</a> based from <a class="blue-text text-lighten-3" href="http://materializecss.com">Materialize</a> with <a class="blue-text text-lighten-3" href="http://git.blivesta.com/animsition/">Animsition</a>, <a class="blue-text text-lighten-3" href="https://kenwheeler.github.io/slick/">Slick</a>, and <a class="blue-text text-lighten-3" href="http://daneden.me/animate/">Magic.css</a>. <br/>						
+						Made by <a class="blue-text text-lighten-3" href="http://materializecss.com/templates/parallax-template/preview.html">Parallax Template</a> based from <a class="blue-text text-lighten-3" href="http://materializecss.com">Materialize</a> with <a class="blue-text text-lighten-3" href="http://git.blivesta.com/animsition/">Animsition</a>, <a class="blue-text text-lighten-3" href="https://kenwheeler.github.io/slick/">Slick</a>, and <a class="blue-text text-lighten-3" href="http://daneden.me/animate/">Magic.css</a>. <br/>
+					</p>
+					<p>Thanks <a href="http://www.lukkid.in.th/" class="white-text">P'Lukkid</a> for many of suggestion. <i class="icon icon-smile"></i></p>					
 				</div>
 			</div>
 			<div class="footer-copyright">

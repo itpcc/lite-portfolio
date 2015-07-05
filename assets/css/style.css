@@ -6,7 +6,10 @@
  * Made By MaterializeCSS.com
  */
 html{
-	font-family: 'CS PraKas', 'TH Sarabun New', 'Thonburi', 'Browallia New', 'BrowalliaUPC', sans-serif;
+	font-family: 'Boon', 'TH Sarabun New', 'Thonburi', 'Browallia New', 'BrowalliaUPC', sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
 }
 h1, h2, h3, h4{
 	font-family: 'Bangna', 'ThaiSans Neue', 'Thonburi', 'Browallia New', 'BrowalliaUPC', sans-serif;
@@ -60,16 +63,6 @@ body>.animsition-loading:after {
 	content: "Please wait. Loading in progress...";
 	margin-top: 3rem;
   	font-size: 1.5rem;
-}
-@media only screen and (max-width : 500px){
-	/* body>.animsition-loading:before {
-		font-family: "itpcc";
-		position: fixed;
-		top: calc(50% - 80px);
-		top: calc(50% - 5.75rem);
-		font-size: 64px;
-		font-size: 4.6rem;
-	} */
 }
 
 
@@ -327,6 +320,12 @@ body>.animsition-loading:after {
 	background-color: rgb(0, 127, 255);
 }
 
+@media only screen and (min-width : 992px) {
+	#computer-archivement .img-gallery{
+		display: none;
+	}
+}
+
 @media only screen and (max-width : 992px) {
 	/* .parallax-container .section {
 		position: absolute;
@@ -398,10 +397,7 @@ body>.animsition-loading:after {
 		left: -10%;
 		-webkit-transform: rotateY(180deg) scaleY(1.1);
 				transform: rotateY(180deg) scaleY(1.1);
-	}
-	#computer-archivement .img-gallery{
-		display: none;
-	}
+	}	
 	/*Project*/
 	#project-list div[data-project] .card{
 		-webkit-transition: width ease-in-out 0.35s;
@@ -429,19 +425,40 @@ body>.animsition-loading:after {
 	}
 }
 @media only screen and (max-width : 600px) {
+	h1.header{
+		width: 95vw;
+	}
+	.parallax-container .section{
+		width: 95vw;
+		margin: 0;
+		margin-right: 2.5vw;
+		margin-left: 2.5vw;
+	}
+	#main-section .container{
+		width: 95vw;
+		margin: 0;
+		margin-right: 1.25rem;
+		margin-left: -0.75rem;
+		left: 0;
+	}
 	#index-banner .section {
 		top: 0;
 	}
 	.parallax-container .section-content-wrapper{
-		background-color: rgba(255, 255, 255, 0.5);
+		background-color: rgba(255, 255, 255, 0.825);
+		max-width: 95vw;
 	}
 	.parallax-container .section-content-wrapper .header:nth-child(1){
 		background-color: white;
 		margin-left: -0.75rem;
 		margin-right: -0.75rem;
 		padding: 0.75rem;
+		padding-left: 2.5vw;
+		padding-right: 2.5vw;
 		text-align: center;
+		letter-spacing: -4px;
 	}
+	
 	.slideshow-container{
 		display: none;
 	}
