@@ -36,6 +36,28 @@
 	<meta property="article:tag" content="ITPCC,portfolio" />
 	<meta property="fb:admins" content="1023475545" />
 
+	<!-- Icon -->
+	<link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://portfolio.itpcc.net/lite/assets/icon/apple-touch-icon-57x57.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://portfolio.itpcc.net/lite/assets/icon/apple-touch-icon-114x114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://portfolio.itpcc.net/lite/assets/icon/apple-touch-icon-72x72.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://portfolio.itpcc.net/lite/assets/icon/apple-touch-icon-144x144.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="60x60" href="http://portfolio.itpcc.net/lite/assets/icon/apple-touch-icon-60x60.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="120x120" href="http://portfolio.itpcc.net/lite/assets/icon/apple-touch-icon-120x120.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="http://portfolio.itpcc.net/lite/assets/icon/apple-touch-icon-76x76.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="http://portfolio.itpcc.net/lite/assets/icon/apple-touch-icon-152x152.png" />
+	<link rel="icon" type="image/png" href="http://portfolio.itpcc.net/lite/assets/icon/favicon-196x196.png" sizes="196x196" />
+	<link rel="icon" type="image/png" href="http://portfolio.itpcc.net/lite/assets/icon/favicon-96x96.png" sizes="96x96" />
+	<link rel="icon" type="image/png" href="http://portfolio.itpcc.net/lite/assets/icon/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="http://portfolio.itpcc.net/lite/assets/icon/favicon-16x16.png" sizes="16x16" />
+	<link rel="icon" type="image/png" href="http://portfolio.itpcc.net/lite/assets/icon/favicon-128.png" sizes="128x128" />
+	<meta name="application-name" content="ITPCC Portfolio"/>
+	<meta name="msapplication-TileColor" content="#007FFF" />
+	<meta name="msapplication-TileImage" content="http://portfolio.itpcc.net/lite/assets/icon/mstile-144x144.png" />
+	<meta name="msapplication-square70x70logo" content="http://portfolio.itpcc.net/lite/assets/icon/mstile-70x70.png" />
+	<meta name="msapplication-square150x150logo" content="http://portfolio.itpcc.net/lite/assets/icon/mstile-150x150.png" />
+	<meta name="msapplication-wide310x150logo" content="http://portfolio.itpcc.net/lite/assets/icon/mstile-310x150.png" />
+	<meta name="msapplication-square310x310logo" content="http://portfolio.itpcc.net/lite/assets/icon/mstile-310x310.png" />
+
 	<!-- CSS  -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="./assets/css/boon.css" type="text/css" rel="stylesheet"/>
@@ -82,8 +104,8 @@
 				<div class="container">
 					<div class="row left">
 						<div class="col m9 section-content-wrapper">
-							<h1 class="header left blue-text text-darken-2">Hi, I'm Rachasak</h1>					
-							<h5 class="header light black-text">
+							<h1 class="header left blue-text text-darken-2">สวัสดีครับ <span class="material-icons">smile</span></h1>					
+							<h5 class="header light black-text" style="line-height: 1.25;">
 								ผมเชื่อว่าประสบการณ์ที่ดีที่สุดไม่ได้เกิดจากการทำไปตามคำสั่ง แต่เกิดจากการทำในสิ่งที่ชอบและอยากทำ<br />
 								นี่คือสรุปข้อมูลผลงานและรายละเอียดทั่วไปของผมตลอดแปดปีที่ผ่านมา ขอเชิญท่านเลื่อนลงด้านล่างหรือคลิกเลือกตามเมนูแล้วทัศนาได้เลยครับ<br />
 							</h5>
@@ -111,7 +133,7 @@
 				</div>
 				<div class="row">
 					<div class="col m4 attr-title"><i class="Small mdi-maps-my-location"></i> ผมอยู่ที่ไหน</div>
-					<div class="col m8 attr-detail">
+					<div class="col m8 attr-detail" style="padding-top: 0.2rem;">
 						ทุ่งสง นครศรีธรรมราช
 					</div>
 				</div>
@@ -480,7 +502,7 @@
 			<div class="section no-pad-bot">
 				<div class="container">
 					<div class="row center">
-						<h2 class="header col s12 light"><i class="material-icons">face</i> Talk with me, call me</h2>
+						<h2 class="header col s12 light"><i class="material-icons">face</i> ติดต่อผม<!-- Talk with me, call me --></h2>
 					</div>
 					<div class="row" id="contact-list">
 						<div class="col s12 m6 offset-m3 contact-detail" id="contact-facebook">
@@ -495,7 +517,16 @@
 						<div class="col s12 m6 offset-m3 contact-detail" id="contact-blog">
 							<a href="https://itpcc.net"><span class="icon icon-ITPCC"><span class="path1"></span><span class="path2"></span></span> itpcc.net</a>
 						</div>
-
+						<div class="col s12 m6 offset-m3 contact-detail" id="contact-mail">
+							<span class="material-icons">email</span>
+							<span style="unicode-bidi: bidi-override;direction: rtl;"> 
+								<?php 
+									$reverseTxt = strrev('r.rachasak@gmail.com');
+									$randomPos = rand(1, strlen($reverseTxt) - 2);
+									echo substr($reverseTxt, 0, $randomPos), '<span style="display: none;">notforbot</span>', substr($reverseTxt, $randomPos);
+								?>
+							 </span>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -536,7 +567,8 @@
 					<p class="white-text">
 						Made by <a class="blue-text text-lighten-3" href="http://materializecss.com/templates/parallax-template/preview.html">Parallax Template</a> based from <a class="blue-text text-lighten-3" href="http://materializecss.com">Materialize</a> with <a class="blue-text text-lighten-3" href="http://git.blivesta.com/animsition/">Animsition</a>, <a class="blue-text text-lighten-3" href="https://kenwheeler.github.io/slick/">Slick</a>, and <a class="blue-text text-lighten-3" href="http://daneden.me/animate/">Magic.css</a>. <br/>
 					</p>
-					<p>Thanks <a href="http://www.lukkid.in.th/" class="white-text">P'Lukkid</a> for many of suggestion. <i class="icon icon-smile"></i></p>					
+					<p>
+						Thanks <a href="http://www.lukkid.in.th/" class="white-text">P'Lukkid</a> for many of suggestion. Supawit Somsakul for very great intro photo. <i class="icon icon-smile"></i></p>
 				</div>
 			</div>
 			<div class="footer-copyright">
