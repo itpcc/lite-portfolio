@@ -515,7 +515,7 @@
 							<a href="https://github.com/itpcc"><i class="icon icon-github2"></i> github.com/itpcc</a>
 						</div>
 						<div class="col s12 m6 offset-m3 contact-detail" id="contact-blog">
-							<a href="https://itpcc.net"><span class="icon icon-ITPCC"><span class="path1"></span><span class="path2"></span></span> itpcc.net</a>
+							<a href="http://www.itpcc.net"><span class="icon icon-ITPCC"><span class="path1"></span><span class="path2"></span></span> itpcc.net</a>
 						</div>
 						<div class="col s12 m6 offset-m3 contact-detail" id="contact-mail">
 							<span class="material-icons">email</span>
@@ -568,12 +568,12 @@
 						Made by <a class="blue-text text-lighten-3" href="http://materializecss.com/templates/parallax-template/preview.html">Parallax Template</a> based from <a class="blue-text text-lighten-3" href="http://materializecss.com">Materialize</a> with <a class="blue-text text-lighten-3" href="http://git.blivesta.com/animsition/">Animsition</a>, <a class="blue-text text-lighten-3" href="https://kenwheeler.github.io/slick/">Slick</a>, and <a class="blue-text text-lighten-3" href="http://daneden.me/animate/">Magic.css</a>. <br/>
 					</p>
 					<p>
-						Thanks <a href="http://www.lukkid.in.th/" class="white-text">P'Lukkid</a> for many of suggestion. Supawit Somsakul for very great intro photo. <i class="icon icon-smile"></i></p>
+						Thanks <a href="http://www.lukkid.in.th/" class="white-text">P'Lukkid</a> for many of suggestion, Supawit Somsakul for very great intro photo. <i class="icon icon-smile"></i></p>
 				</div>
 			</div>
 			<div class="footer-copyright">
 				<div class="container">
-					Source code at <a class="blue-text text-lighten-3" href="https://github.com/itpcc/lite-portfolio"><i class="icon icon-github2"></i> Github</a>. Code licensed under the MIT</p>
+					Source code at <a class="blue-text text-lighten-3" href="https://github.com/itpcc/lite-portfolio"><i class="icon icon-github2"></i> Github</a>. Code licensed under the <a href="http://opensource.org/licenses/MIT" class="white-text">MIT</a>	</p>
 				</div>
 			</div>
 		</footer>
